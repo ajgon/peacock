@@ -1,0 +1,3 @@
+# peacock
+
+My first (pathetic) attempt to understand webpack, babel, react, preact, redux, postcss, css modules, service workers and all this "modern web" crap...

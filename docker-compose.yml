@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  base:
+    build: .
+    volumes:
+      - ".:/app"
+
+  development:
+    extends:
+      service: base
+    command: webpack-dev-server
+    entrypoint: /entrypoint.sh
+    environment:
+      NODE_ENV: development
+    ports:
+      - "8080:8080"
+
+  production:
+    extends:
+      service: base
+    environment:
+      NODE_ENV: production
+    command: echo 'no-op'
