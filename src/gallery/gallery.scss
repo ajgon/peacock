@@ -1,0 +1,12 @@
+.container {
+  background-color: #f7f8fa;
+  border-top: solid 1px #eeeff2;
+  padding: 10px 0 50px 0;
+
+  .photos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

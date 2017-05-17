@@ -1,0 +1,16 @@
+.thumbnail {
+  background: #eeeff2;
+
+  img {
+    display: block;
+    opacity: 0;
+
+    &.loaded {
+      opacity: 1;
+    }
+
+    &.loaded-slow {
+      transition: opacity 0.5s;
+    }
+  }
+}
